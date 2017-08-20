@@ -15,10 +15,15 @@ namespace EtwStream
         // { EventSource : { EventId, EventSchemaPortion } }
         readonly static ConcurrentDictionary<System.Diagnostics.Tracing.EventSource, ReadOnlyDictionary<int, EventSchemaPortion>> cache = new ConcurrentDictionary<System.Diagnostics.Tracing.EventSource, ReadOnlyDictionary<int, EventSchemaPortion>>();
 
-        static ReadOnlyDictionary<int, EventSchemaPortion> GetEventSchemaPortions(System.Diagnostics.Tracing.EventSource source)
+        readonly static ReadOnlyDictionary<int, EventSchemaPortion> emptySchemaPortionDict = new ReadOnlyDictionary<int, EventSchemaPortion>(new Dictionary<int, EventSchemaPortion>());
+
+        static IReadOnlyDictionary<int, EventSchemaPortion> GetEventSchemaPortions(System.Diagnostics.Tracing.EventSource source)
         {
             return cache.GetOrAdd(source, s => // no needs lock
             {
+                if (s.Settings.HasFlag(EventSourceSettings.EtwSelfDescribingEventFormat))
+                    return emptySchemaPortionDict;
+
                 var manifest = System.Diagnostics.Tracing.EventSource.GenerateManifest(s.GetType(), null);
 
                 var xElem = XElement.Parse(manifest);
