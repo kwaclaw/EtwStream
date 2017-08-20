@@ -1,7 +1,7 @@
-﻿using System.Diagnostics.Tracing;
-using System.Reactive.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
+using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
 namespace EtwStream
@@ -33,7 +33,7 @@ namespace EtwStream
             {
                 if (item.Name.Equals(eventSourceName, StringComparison.Ordinal))
                 {
-                    return FromEventSource(item, level);
+                    return FromEventSource(item, level, matchAnyKeyword, arguments);
                 }
             }
 
