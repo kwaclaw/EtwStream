@@ -1,14 +1,9 @@
-﻿using System;
+﻿using EtwStream;
+using System;
 using System.Diagnostics;
 using System.Diagnostics.Tracing;
-using System.Linq;
 using System.Reactive.Linq;
-using System.Runtime.Caching;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using EtwStream;
 
 namespace SampleEventSource
 {

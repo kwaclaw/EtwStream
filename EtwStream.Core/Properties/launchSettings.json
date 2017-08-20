@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "EtwStream.Core": {
+      "commandName": "Project"
+    }
+  }
+}

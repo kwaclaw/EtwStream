@@ -1,6 +1,6 @@
-using System;
 using Microsoft.Diagnostics.Tracing;
 using Microsoft.Diagnostics.Tracing.Session;
+using System;
 
 namespace EtwStream
 {

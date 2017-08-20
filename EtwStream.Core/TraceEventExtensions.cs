@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.Diagnostics.Tracing;
+using Microsoft.Diagnostics.Tracing.Parsers;
+using System;
+using System.Collections.Concurrent;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Diagnostics.Tracing;
-using System.Collections.Concurrent;
-using System.Collections.ObjectModel;
 using System.Xml.Linq;
-using Microsoft.Diagnostics.Tracing.Parsers;
 
 namespace EtwStream
 {

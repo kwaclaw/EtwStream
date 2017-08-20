@@ -1,11 +1,10 @@
-﻿using System;
+﻿using LINQPad;
+using Microsoft.Diagnostics.Tracing;
+using System;
 using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Runtime.Caching;
-using System.Text;
-using LINQPad;
-using Microsoft.Diagnostics.Tracing;
 
 namespace EtwStream
 {
