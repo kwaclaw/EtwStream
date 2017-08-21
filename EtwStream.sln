@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtwStream.Core", "EtwStream.Core\EtwStream.Core.csproj", "{160A1602-5FA5-4E54-A2B0-21BD33FE06F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EtwStream.Core", "EtwStream.Core\EtwStream.Core.csproj", "{160A1602-5FA5-4E54-A2B0-21BD33FE06F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{492B475A-D99D-4C78-B707-45DFCB290BF4}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,23 +17,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{492B47
 		.nuget\push.bat = .nuget\push.bat
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtwStream.LinqPad", "EtwStream.LinqPad\EtwStream.LinqPad.csproj", "{7482323F-72A0-4F8D-A3B5-D15822D32627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EtwStream.LinqPad", "EtwStream.LinqPad\EtwStream.LinqPad.csproj", "{7482323F-72A0-4F8D-A3B5-D15822D32627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleEventSource", "SampleEventSource\SampleEventSource.csproj", "{451C33DB-7E55-4769-8F1F-DB70503A1107}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleEventSource", "SampleEventSource\SampleEventSource.csproj", "{451C33DB-7E55-4769-8F1F-DB70503A1107}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtwStream.Service", "EtwStream.Service\EtwStream.Service.csproj", "{0D5B543D-5156-43BC-AEDB-97D3404A8DAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EtwStream.Service", "EtwStream.Service\EtwStream.Service.csproj", "{0D5B543D-5156-43BC-AEDB-97D3404A8DAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerPerformance", "LoggerPerformance\LoggerPerformance.csproj", "{BC354408-3172-410B-9B74-EF377818906E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerPerformance", "LoggerPerformance\LoggerPerformance.csproj", "{BC354408-3172-410B-9B74-EF377818906E}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EtwStream", "EtwStream\EtwStream.shproj", "{7D6B5012-7065-4177-9C8A-46766C41AA59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtwStream.InProcess", "EtwStream.InProcess\EtwStream.InProcess.csproj", "{0C93F26E-3886-4D66-80EA-341896B91A95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EtwStream.InProcess", "EtwStream.InProcess\EtwStream.InProcess.csproj", "{0C93F26E-3886-4D66-80EA-341896B91A95}"
+EndProject
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		EtwStream\EtwStream.projitems*{0c93f26e-3886-4d66-80ea-341896b91a95}*SharedItemsImports = 4
-		EtwStream\EtwStream.projitems*{7d6b5012-7065-4177-9c8a-46766c41aa59}*SharedItemsImports = 13
 		EtwStream\EtwStream.projitems*{160a1602-5fa5-4e54-a2b0-21bd33fe06f3}*SharedItemsImports = 4
+		EtwStream\EtwStream.projitems*{7d6b5012-7065-4177-9c8a-46766c41aa59}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,5 +68,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB69528F-B872-471C-8542-CC83478AA451}
 	EndGlobalSection
 EndGlobal
