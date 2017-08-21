@@ -29,6 +29,12 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EtwStream", "EtwStream\EtwS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EtwStream.InProcess", "EtwStream.InProcess\EtwStream.InProcess.csproj", "{0C93F26E-3886-4D66-80EA-341896B91A95}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artifacts", "artifacts", "{A49E58B1-6C3A-4A53-8812-F7575AC15119}"
+	ProjectSection(SolutionItems) = preProject
+		artifacts\CollectPackages.cmd = artifacts\CollectPackages.cmd
+		artifacts\MyFeed_push.cmd = artifacts\MyFeed_push.cmd
+		artifacts\QLineFeed_push.cmd = artifacts\QLineFeed_push.cmd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
